@@ -56,6 +56,16 @@ img {
 }
 
 /* last page */
+.item-info {
+    border-radius: 0% 0% 8% 8%;
+}
+
+.text {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
 .item-title {
     font-family: Montserrat;
     font-style: normal;
@@ -68,10 +78,84 @@ img {
 
     color: #FFFFFF;
     margin-top: 69px;
-    margin-left: 50px;
+    margin-left: 37px;
 
 }
 
+.price-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin-top: 69px;
+    margin-right: 68px;
+}
+
 .img3d {
-    height: 194px;
+    width: 312px;
+    height: 208px;
+    margin-top: 60px;
+    background: red;
+    margin-left: 32px;
+    margin-bottom: 60px;
+
+
+}
+
+.view-btn-end {
+    width: 166px;
+    height: 35px;
+    background: #D9615E;
+    border-radius: 7px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+
+    color: #FFFFFF;
+    margin-top: 149px;
+    margin-left: 72px;
+}
+
+.item-description {
+    width: 375px;
+}
+
+.ingr {
+    width: 300px;
+    height: 53px;
+    left: 52px;
+    top: 107px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+    margin-left: 37px;
+    margin-top: 6px;
+}
+
+.calories {
+    margin-top: 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #000000;
+}
+
+li {
+    list-style: none;
 }

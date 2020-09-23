@@ -75,7 +75,10 @@ function Background() {
             }
         })
         setItems(newItems);
-        console.log(items);
+    }
+
+    function goBack() {
+        setStadium("category");
     }
 
     console.log(stadium);
@@ -109,17 +112,24 @@ function Background() {
         return (
             <div className="item-info">
                 <div className="item-description">
-                    <button>x</button>
-                    <div className="item-title">title</div>
+                    <button onClick={goBack}>x</button>
+                    <div className="text">
+                        <div className="item-title">title</div>
+                        <div className="price-title">6,50</div>
+                    </div>
                     <div className="ingr">Rind, tomate, zwiebel, salat, gurke, haus-sauce</div>
                 </div>
                 <div className="img3d">
-                    <div className="img"></div>
-                    <button className="view-btn"></button>
+                    <button className="view-btn-end">VIEW IN 3D</button>
                 </div>
                 <hr />
                 <div className="calories">
-                    <ul><li>Meat ........ 143 kcal</li></ul>
+                    <ul><li>Meat ............................................ 143 kcal</li>
+                        <li>Tomatoes ...................................... 18 kcal</li>
+                        <li>Salad ............................................. 15 kcal</li>
+
+                        <li>Ketchup ......................................... 23 kcal</li>
+                    </ul>
                 </div>
             </div>
         )

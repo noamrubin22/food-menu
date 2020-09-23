@@ -31,7 +31,7 @@ function ItemLabel(props) {
                 <div className="middle-info">
                     <div className="img"></div>
                     <div className="item-description">
-                        <div className="ingr">Rind, tomate, zwiebel, salat, gurke, haus-sauce</div>
+                        <div className="ing">Rind, tomate, zwiebel, salat, gurke, haus-sauce</div>
                         <div className="price">
                             <p><b>6,50€</b></p>
                             <p><b>+40 cent cheese</b></p>
