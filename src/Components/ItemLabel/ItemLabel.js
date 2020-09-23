@@ -1,7 +1,10 @@
 import React, {
+    useLayoutEffect,
     useState
 } from 'react';
-
+import arrow from "./arrow.png";
+import arrowUp from "./arrow-up.png";
+import burger from "./burger.png"
 import "./ItemLabel.css"
 
 function ItemLabel(props) {
@@ -15,10 +18,9 @@ function ItemLabel(props) {
         return (
             <div className="item-label">
                 <div className="label-description">
-                    <img src={props.img} alt={props.item} />
-                    <h3>{props.item}</h3>
+                    <p className="item-titles">{props.item}</p>
                 </div>
-                <button onClick={() => props.handleChange(props.index)}>x</button>
+                <div onClick={() => props.handleChange(props.index)}><img className="arrow" src={arrow} alt="Arrow" /></div>
             </div>
         );
     } else {
@@ -26,15 +28,15 @@ function ItemLabel(props) {
             <div className="item-label-exp">
                 <div className="top-info">
                     <div className="title-exp">{props.item}</div>
-                    <button onClick={() => props.handleChange(props.index)}>x</button>
+                    <div onClick={() => props.handleChange(props.index)}><img className="arrow" src={arrowUp} alt="Arrow" /></div>
                 </div>
                 <div className="middle-info">
-                    <div className="img"></div>
+                    <img className="burger-img" alt="Burger" />
                     <div className="item-description">
                         <div className="ing">Rind, tomate, zwiebel, salat, gurke, haus-sauce</div>
                         <div className="price">
                             <p><b>6,50€</b></p>
-                            <p><b>+40 cent cheese</b></p>
+                            <p><b>(+40 cent cheese)</b></p>
                         </div>
                     </div>
                 </div>

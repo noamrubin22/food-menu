@@ -17,12 +17,6 @@
 
 .label-description {
     display: flex;
-
-    /* position: absolute;
-    width: 108px;
-    height: 23px;
-    left: 101px;
-    top: 256px; */
 }
 
 h3 {
@@ -31,4 +25,36 @@ h3 {
     font-size: 19px;
     line-height: 23px;
     color: #000000;
+}
+
+.img-burger {
+    width: 35px;
+    height: 38px;
+    margin-left: 19px;
+    margin-top: 15px;
+}
+
+.cat-title {
+    width: 185px;
+    height: 23px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.arrow {
+    width: 31px;
+    height: 40px;
+    margin-right: 26px;
+    margin-top: 9px;
+}
+
+.arrow-start {
+    width: 43px;
+    height: 39px;
+    margin-right: 26px;
+    margin-top: 14px;
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import burger from "./burger.png";
+import arrow from "./arrow.png";
 import "./CategoryLabel.css"
 
 function CategoryLabel(props) {
@@ -8,15 +9,15 @@ function CategoryLabel(props) {
         props.setKitchen(props.category);
     }
 
-
-    console.log(props.stadium)
     return (
         <div className="category-label">
             <div className="label-description">
-                <img src="./burger.svg" alt={props.category} />
-                <p>{props.category}</p>
+                <img className="img-burger" src={burger} alt={props.category} />
+                <p className="cat-title">{props.category}</p>
             </div>
-            <button onClick={handleChange}>x</button>
+            <div onClick={handleChange}>
+                <img className="arrow-start" src={arrow} alt="Arrow" />
+            </div>
         </div>
     )
 }

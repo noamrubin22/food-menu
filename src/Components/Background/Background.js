@@ -86,8 +86,6 @@ function Background() {
             console.log("heeeeee")
         }
     }
-
-    console.log(stadium);
     if (stadium === "start") {
         return (
             <div className="background">
@@ -104,7 +102,7 @@ function Background() {
     } else if (stadium === "category") {
         return (
             <div className="background category">
-                <button onClick={() => { goBack(stadium) }}>x</button>
+                <button className="vector" onClick={() => { goBack(stadium) }}></button>
                 <div className="title">
                     <h2>{kitchen}</h2>
                 </div>

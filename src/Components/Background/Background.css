@@ -24,7 +24,7 @@
 }
 
 h2 {
-    font-family: Montserrat;
+    font-family: Verdana;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -38,7 +38,7 @@ h2 {
 .menu-categories {
     position: absolute;
     width: 375px;
-    height: 468px;
+    height: 530px;
     left: 0px;
     top: 199px;
     border-radius: 8% 8% 0% 0%;
@@ -73,7 +73,7 @@ img {
 }
 
 .item-title {
-    font-family: Montserrat;
+    font-family: Verdana;
     font-style: normal;
     font-weight: 600;
     font-size: 26px;
@@ -89,7 +89,7 @@ img {
 }
 
 .price-title {
-    font-family: Montserrat;
+    font-family: Verdana;
     font-style: normal;
     font-weight: 600;
     font-size: 26px;
@@ -119,7 +119,7 @@ img {
     height: 35px;
     background: #D9615E;
     border-radius: 7px;
-    font-family: Montserrat;
+    font-family: Verdana;
     font-style: normal;
     font-weight: 500;
     font-size: 19px;
@@ -134,13 +134,46 @@ img {
     width: 375px;
 }
 
+/* Group */
+.vector {
+    position: absolute;
+    left: 6.4%;
+    right: 86.13%;
+    top: 3%;
+    bottom: 93.33%;
+
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.33));
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 6.4%;
+    right: 89.87%;
+    top: 3%;
+    bottom: 93.33%;
+
+    background: #FFFFFF;
+
+
+    /* Vector */
+
+    position: absolute;
+    left: 6.87%;
+    right: 86.13%;
+    top: 4.57%;
+    bottom: 94.9%;
+
+    background: #FFFFFF;
+}
+
 .ingr {
     width: 300px;
     height: 53px;
     left: 52px;
     top: 107px;
 
-    font-family: Montserrat;
+    font-family: Verdana;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -153,7 +186,7 @@ img {
 
 .calories {
     margin-top: 30px;
-    font-family: Montserrat;
+    font-family: Verdana;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
