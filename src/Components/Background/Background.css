@@ -54,3 +54,24 @@ h2 {
 img {
     margin-right: 28px;
 }
+
+/* last page */
+.item-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin-top: 69px;
+    margin-left: 50px;
+
+}
+
+.img3d {
+    height: 194px;
+}

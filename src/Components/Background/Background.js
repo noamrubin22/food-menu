@@ -64,6 +64,20 @@ function Background() {
         },
     ]);
 
+    function handleChange(index) {
+        let newItems = items.map((item, i) => {
+            if (i === index) {
+                item.isChosen = !item.isChosen;
+                return item;
+            } else {
+                item.isChosen = false;
+                return item;
+            }
+        })
+        setItems(newItems);
+        console.log(items);
+    }
+
     console.log(stadium);
     if (stadium === "start") {
         return (
@@ -86,8 +100,26 @@ function Background() {
                 </div>
                 <div className="menu-items">
                     {items.map((item, index) => (
-                        <ItemLabel key={index} index={index} item={item.title} img={item.img} isChosen={item.isChosen} setItems={setItems} />
+                        <ItemLabel key={index} index={index} item={item.title} img={item.img} isChosen={item.isChosen} handleChange={handleChange} setStadium={setStadium} />
                     ))}
+                </div>
+            </div>
+        )
+    } else {
+        return (
+            <div className="item-info">
+                <div className="item-description">
+                    <button>x</button>
+                    <div className="item-title">title</div>
+                    <div className="ingr">Rind, tomate, zwiebel, salat, gurke, haus-sauce</div>
+                </div>
+                <div className="img3d">
+                    <div className="img"></div>
+                    <button className="view-btn"></button>
+                </div>
+                <hr />
+                <div className="calories">
+                    <ul><li>Meat ........ 143 kcal</li></ul>
                 </div>
             </div>
         )

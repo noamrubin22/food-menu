@@ -5,29 +5,43 @@ import React, {
 import "./ItemLabel.css"
 
 function ItemLabel(props) {
-    const [chosenItem, setChosenItem] = useState("")
-    let isChosen = props.isChosen;
 
     function handleChange() {
-        setChosenItem(props.item);
-        console.log(isChosen)
-        isChosen = !isChosen;
+        console.log(props)
+        props.setStadium("varietu")
     }
 
-    return (
-        <div className="item-label">
-            <div className="label-description">
-                <img src={props.img} alt="burger" />
-                <h3>{props.item}</h3>
+    if (!props.isChosen) {
+        return (
+            <div className="item-label">
+                <div className="label-description">
+                    <img src={props.img} alt="burger" />
+                    <h3>{props.item}</h3>
+                </div>
+                <button onClick={() => props.handleChange(props.index)}>x</button>
             </div>
-            <button onClick={handleChange}>x</button>
-            {/* <div className="label-description">
-                <img src="./burger.svg" alt="burger" />
-                <h3>{props.item}</h3>
+        );
+    } else {
+        return (
+            <div className="item-label-exp">
+                <div className="top-info">
+                    <div className="title-exp">{props.item}</div>
+                    <button onClick={() => props.handleChange(props.index)}>x</button>
+                </div>
+                <div className="middle-info">
+                    <div className="img"></div>
+                    <div className="item-description">
+                        <div className="ingr">Rind, tomate, zwiebel, salat, gurke, haus-sauce</div>
+                        <div className="price">
+                            <p><b>6,50€</b></p>
+                            <p><b>+40 cent cheese</b></p>
+                        </div>
+                    </div>
+                </div>
+                <button className="view-btn" onClick={handleChange}>VIEW IN 3D</button>
             </div>
-            <button onClick={handleChange}>x</button> */}
-        </div>
-    );
+        )
+    }
 }
 
 export default ItemLabel;
