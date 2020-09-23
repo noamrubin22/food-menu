@@ -77,8 +77,14 @@ function Background() {
         setItems(newItems);
     }
 
-    function goBack() {
-        setStadium("category");
+    function goBack(stadium) {
+        if (stadium === "category") {
+            setStadium("start");
+            console.log("set stadium");
+        } else if (stadium !== "item-info") {
+            setStadium("category");
+            console.log("heeeeee")
+        }
     }
 
     console.log(stadium);
@@ -97,7 +103,8 @@ function Background() {
         )
     } else if (stadium === "category") {
         return (
-            <div className="background">
+            <div className="background category">
+                <button onClick={() => { goBack(stadium) }}>x</button>
                 <div className="title">
                     <h2>{kitchen}</h2>
                 </div>
@@ -112,7 +119,7 @@ function Background() {
         return (
             <div className="item-info">
                 <div className="item-description">
-                    <button onClick={goBack}>x</button>
+                    <button onClick={() => { goBack(stadium) }}>x</button>
                     <div className="text">
                         <div className="item-title">title</div>
                         <div className="price-title">6,50</div>

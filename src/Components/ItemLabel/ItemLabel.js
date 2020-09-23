@@ -15,7 +15,7 @@ function ItemLabel(props) {
         return (
             <div className="item-label">
                 <div className="label-description">
-                    <img src={props.img} alt="burger" />
+                    <img src={props.img} alt={props.item} />
                     <h3>{props.item}</h3>
                 </div>
                 <button onClick={() => props.handleChange(props.index)}>x</button>

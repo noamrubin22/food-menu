@@ -14,7 +14,7 @@ function CategoryLabel(props) {
         <div className="category-label">
             <div className="label-description">
                 <img src="./burger.svg" alt={props.category} />
-                {props.category}
+                <p>{props.category}</p>
             </div>
             <button onClick={handleChange}>x</button>
         </div>

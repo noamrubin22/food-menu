@@ -4,8 +4,14 @@
     height: 250px;
     left: 0px;
     top: 0px;
-    background: green;
+    background: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
     /* background: url(restaur.png); */
+}
+
+.category {
+    background: url("https://i.insider.com/5d8ca1222e22af53447766c2?width=1100&format=jpeg&auto=webp");
+    background-repeat: no-repeat;
+    background-size: 380px;
 }
 
 .title {
