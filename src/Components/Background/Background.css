@@ -4,12 +4,12 @@
     height: 250px;
     left: 0px;
     top: 0px;
-    background: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    background: url("./Rectangle\ 30.png");
     /* background: url(restaur.png); */
 }
 
 .category {
-    background: url("https://i.insider.com/5d8ca1222e22af53447766c2?width=1100&format=jpeg&auto=webp");
+    background: url("./category-rec.png");
     background-repeat: no-repeat;
     background-size: 380px;
 }
@@ -29,10 +29,10 @@ h2 {
     font-weight: bold;
     font-size: 32px;
     line-height: 39px;
-    margin-right: 190px;
     color: #FFFFFF;
-
     text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.38);
+    margin-top: 3px;
+    margin-left: 6px;
 }
 
 .menu-categories {
@@ -68,8 +68,9 @@ img {
 
 .text {
     display: flex;
-    align-items: stretch;
+    /* align-items: stretch; */
     justify-content: space-between;
+    width: 371px;
 }
 
 .item-title {
@@ -106,11 +107,10 @@ img {
 .img3d {
     width: 312px;
     height: 208px;
-    margin-top: 60px;
-    background: red;
+    margin-top: 38px;
+    background-image: url("./classicburger.png");
     margin-left: 32px;
     margin-bottom: 60px;
-
 
 }
 
@@ -126,8 +126,8 @@ img {
     line-height: 23px;
 
     color: #FFFFFF;
-    margin-top: 149px;
     margin-left: 72px;
+    margin-top: 208px;
 }
 
 .item-description {
@@ -137,34 +137,13 @@ img {
 /* Group */
 .vector {
     position: absolute;
-    left: 6.4%;
-    right: 86.13%;
-    top: 3%;
-    bottom: 93.33%;
-
+    background-image: url("./vector.png");
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 24.5px;
+    left: 24px;
+    top: 20px;
     filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.33));
-
-
-    /* Vector */
-
-    position: absolute;
-    left: 6.4%;
-    right: 89.87%;
-    top: 3%;
-    bottom: 93.33%;
-
-    background: #FFFFFF;
-
-
-    /* Vector */
-
-    position: absolute;
-    left: 6.87%;
-    right: 86.13%;
-    top: 4.57%;
-    bottom: 94.9%;
-
-    background: #FFFFFF;
 }
 
 .ingr {
@@ -190,11 +169,12 @@ img {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 20px;
+    line-height: 22px;
     /* identical to box height */
     color: #000000;
 }
 
 li {
     list-style: none;
+    margin: 7px;
 }

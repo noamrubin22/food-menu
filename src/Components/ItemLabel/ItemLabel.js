@@ -5,13 +5,15 @@ import React, {
 import arrow from "./arrow.png";
 import arrowUp from "./arrow-up.png";
 import burger from "./burger.png"
+import ar from "./ar.png";
 import "./ItemLabel.css"
+import { CSSTransition } from 'react-transition-group';
 
 function ItemLabel(props) {
 
     function handleChange() {
         console.log(props)
-        props.setStadium("varietu")
+        props.setStadium("item")
     }
 
     if (!props.isChosen) {
@@ -31,12 +33,12 @@ function ItemLabel(props) {
                     <div onClick={() => props.handleChange(props.index)}><img className="arrow" src={arrowUp} alt="Arrow" /></div>
                 </div>
                 <div className="middle-info">
-                    <img className="burger-img" alt="Burger" />
+                    <img className="burger-img" src={"./burger3.png"} alt="Burger" />
                     <div className="item-description">
                         <div className="ing">Rind, tomate, zwiebel, salat, gurke, haus-sauce</div>
                         <div className="price">
-                            <p><b>6,50€</b></p>
-                            <p><b>(+40 cent cheese)</b></p>
+                            <p id="text"><b>6,50€<br></br><span id="sub-title">(+40 cent cheese)</span>
+                            </b></p>
                         </div>
                     </div>
                 </div>

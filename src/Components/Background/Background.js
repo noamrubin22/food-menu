@@ -8,6 +8,9 @@ import "./Background.css"
 import CategoryLabel from "../CategoryLabel/CategoryLabel";
 import ItemLabel from "../ItemLabel/ItemLabel";
 
+import vector from "./vector.png";
+import classic from "./classicburger.png"
+
 function Background() {
     const [stadium, setStadium] = useState("start");
     const [kitchen, setKitchen] = useState("");
@@ -89,6 +92,7 @@ function Background() {
     if (stadium === "start") {
         return (
             <div className="background">
+                <div className="vector"></div>
                 <div className="title">
                     <h2>GOLDEN</h2>
                 </div>
@@ -102,7 +106,7 @@ function Background() {
     } else if (stadium === "category") {
         return (
             <div className="background category">
-                <button className="vector" onClick={() => { goBack(stadium) }}></button>
+                <div className="vector" onClick={() => { goBack(stadium) }}></div>
                 <div className="title">
                     <h2>{kitchen}</h2>
                 </div>
@@ -117,10 +121,12 @@ function Background() {
         return (
             <div className="item-info">
                 <div className="item-description">
-                    <button onClick={() => { goBack(stadium) }}>x</button>
+                    <div className="vector" onClick={() => { goBack(stadium) }}></div>
                     <div className="text">
-                        <div className="item-title">title</div>
-                        <div className="price-title">6,50</div>
+                        {items.filter(item => item.isChosen).map(filteredItem => (
+                            <div className="item-title">{filteredItem.title}</div>
+                        ))}
+                        <div className="price-title">6,50€</div>
                     </div>
                     <div className="ingr">Rind, tomate, zwiebel, salat, gurke, haus-sauce</div>
                 </div>
@@ -129,14 +135,14 @@ function Background() {
                 </div>
                 <hr />
                 <div className="calories">
-                    <ul><li>Meat ............................................ 143 kcal</li>
-                        <li>Tomatoes ...................................... 18 kcal</li>
-                        <li>Salad ............................................. 15 kcal</li>
+                    <ul><li key="1">Meat ..................... 143 kcal</li>
+                        <li key="2">Tomatoes ................ 18 kcal</li>
+                        <li key="3">Salad ...................... 15 kcal</li>
 
-                        <li>Ketchup ......................................... 23 kcal</li>
+                        <li key="4">Ketchup .................. 23 kcal</li>
                     </ul>
                 </div>
-            </div>
+            </div >
         )
     }
 }
