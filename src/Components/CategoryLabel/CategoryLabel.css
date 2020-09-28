@@ -58,3 +58,13 @@ h3 {
     margin-right: 26px;
     margin-top: 14px;
 }
+
+.fade-appear {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-appear .fade-appear-active {
+    opacity: 1;
+    transition: opacity 10000ms linear;
+}

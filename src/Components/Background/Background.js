@@ -7,7 +7,7 @@ import React, {
 import "./Background.css"
 import CategoryLabel from "../CategoryLabel/CategoryLabel";
 import ItemLabel from "../ItemLabel/ItemLabel";
-
+import { CSSTransition, TransitionGroup } from "react-transition-group"
 import vector from "./vector.png";
 import classic from "./classicburger.png"
 
@@ -98,7 +98,15 @@ function Background() {
                 </div>
                 <div className="menu-categories">
                     {categories.map((category, index) => (
-                        <CategoryLabel key={index} index={index} category={category.title} stadium={stadium} setStadium={setStadium} setKitchen={setKitchen} />
+                        <TransitionGroup className="category-labels" key={index}>
+                            <CSSTransition
+                                timeout={600}
+                                classNames="fade"
+                                key={index}
+                            >
+                                <CategoryLabel key={index} index={index} category={category.title} stadium={stadium} setStadium={setStadium} setKitchen={setKitchen} />
+                            </CSSTransition>
+                        </TransitionGroup>
                     ))}
                 </div>
             </div>
@@ -112,7 +120,15 @@ function Background() {
                 </div>
                 <div className="menu-items">
                     {items.map((item, index) => (
-                        <ItemLabel key={index} index={index} item={item.title} img={item.img} isChosen={item.isChosen} handleChange={handleChange} setStadium={setStadium} />
+                        <TransitionGroup className="category-labels" key={index}>
+                            <CSSTransition
+                                timeout={600}
+                                classNames="fade"
+                                key={index}
+                            >
+                                <ItemLabel key={index} index={index} item={item.title} img={item.img} isChosen={item.isChosen} handleChange={handleChange} setStadium={setStadium} />
+                            </CSSTransition>
+                        </TransitionGroup>
                     ))}
                 </div>
             </div>
@@ -124,7 +140,7 @@ function Background() {
                     <div className="vector" onClick={() => { goBack(stadium) }}></div>
                     <div className="text">
                         {items.filter(item => item.isChosen).map(filteredItem => (
-                            <div className="item-title">{filteredItem.title}</div>
+                            <div className="item-title" key={filteredItem.title}>{filteredItem.title}</div>
                         ))}
                         <div className="price-title">6,50€</div>
                     </div>
@@ -138,11 +154,10 @@ function Background() {
                     <ul><li key="1">Meat ..................... 143 kcal</li>
                         <li key="2">Tomatoes ................ 18 kcal</li>
                         <li key="3">Salad ...................... 15 kcal</li>
-
                         <li key="4">Ketchup .................. 23 kcal</li>
                     </ul>
                 </div>
-            </div >
+            </div>
         )
     }
 }

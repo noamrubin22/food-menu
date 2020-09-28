@@ -178,3 +178,34 @@ li {
     list-style: none;
     margin: 7px;
 }
+
+/* css transition */
+
+.fade-appear {
+    opacity: 0;
+    z-index: 1
+}
+
+.fade-appear.appear-active {
+    opacity: 1;
+    transition: opacity 600ms linear;
+}
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 600ms linear;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 600ms linear
+}
