@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/food-menu/static/css/main.ef148c56.chunk.css",
+    "main.js": "/food-menu/static/js/main.6c910ff5.chunk.js",
+    "main.js.map": "/food-menu/static/js/main.6c910ff5.chunk.js.map",
+    "runtime-main.js": "/food-menu/static/js/runtime-main.bf0b1497.js",
+    "runtime-main.js.map": "/food-menu/static/js/runtime-main.bf0b1497.js.map",
+    "static/js/2.24735acf.chunk.js": "/food-menu/static/js/2.24735acf.chunk.js",
+    "static/js/2.24735acf.chunk.js.map": "/food-menu/static/js/2.24735acf.chunk.js.map",
+    "index.html": "/food-menu/index.html",
+    "precache-manifest.ba1c354c355b637f7d8056d9645c28a6.js": "/food-menu/precache-manifest.ba1c354c355b637f7d8056d9645c28a6.js",
+    "service-worker.js": "/food-menu/service-worker.js",
+    "static/css/main.ef148c56.chunk.css.map": "/food-menu/static/css/main.ef148c56.chunk.css.map",
+    "static/js/2.24735acf.chunk.js.LICENSE.txt": "/food-menu/static/js/2.24735acf.chunk.js.LICENSE.txt",
+    "static/media/Background.css": "/food-menu/static/media/category-rec.2b87af66.png",
+    "static/media/classicburger.png": "/food-menu/static/media/classicburger.bc64a769.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bf0b1497.js",
+    "static/js/2.24735acf.chunk.js",
+    "static/css/main.ef148c56.chunk.css",
+    "static/js/main.6c910ff5.chunk.js"
+  ]
+}
